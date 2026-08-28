@@ -278,6 +278,7 @@ Read the source. This is the fastest way to learn the craft.
 - [Continue](https://github.com/continuedev/continue) — Building blocks for custom in-IDE assistants.
 - [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) — Everything is a plugin, including the agent loop itself. There is deliberately no privileged core; the shipped coding agent is just one composition of swappable parts.
 - [Pi](https://github.com/earendil-works/pi) — The minimalist counterpoint: a thin core of four tools (`read`, `write`, `edit`, `bash`) on the bet that frontier models already know what a coding agent is. Everything else lives in extensions you add deliberately.
+- [SandBase CLI](https://github.com/sandbaseai/cli) — A provider-agnostic CLI harness that exposes one Responses-compatible interface across 25 AI clients; its MCP bridge and six tools show how model routing, tool dispatch, OAuth, and rollback fit around the model.
 
 ### Personal agents
 
