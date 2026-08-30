@@ -277,6 +277,7 @@ Read the source. This is the fastest way to learn the craft.
 - [Goose](https://github.com/block/goose) — Block's extensible on-machine agent.
 - [Continue](https://github.com/continuedev/continue) — Building blocks for custom in-IDE assistants.
 - [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) — Everything is a plugin, including the agent loop itself. There is deliberately no privileged core; the shipped coding agent is just one composition of swappable parts.
+- [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) — Local-first, self-hosted agent runtime and MCP bridge with managed sessions, sandboxed turns, credential controls, memory, artifacts, approvals, audit, and replay. It is a concrete reference for separating an inspectable control plane from backend-dependent execution isolation.
 - [Pi](https://github.com/earendil-works/pi) — The minimalist counterpoint: a thin core of four tools (`read`, `write`, `edit`, `bash`) on the bet that frontier models already know what a coding agent is. Everything else lives in extensions you add deliberately.
 
 ### Personal agents
