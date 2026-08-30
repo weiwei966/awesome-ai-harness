@@ -277,6 +277,7 @@ Context window 就是 agent 的全部工作记忆，而且是一种稀缺的、�
 - [Goose](https://github.com/block/goose) —— Block 出品，可扩展的本地 agent。
 - [Continue](https://github.com/continuedev/continue) —— 自建 IDE 内助手的积木。
 - [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) —— 一切皆 plugin，连 agent loop 本身也是。刻意不保留任何特权内核；官方那个 coding agent 只是这些可替换零件的一种组合方式。
+- [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) —— Local-first、自托管的 agent runtime 与 MCP bridge，提供 managed session、沙箱 turn、credential 控制、memory、artifact、审批、审计与 replay。它是一个把可检查的 control plane 与依赖后端的执行隔离明确分开的参考实现。
 - [Pi](https://github.com/earendil-works/pi) —— 极简主义的对照组：只有 `read`、`write`、`edit`、`bash` 四个工具的薄内核，赌的是前沿模型本来就知道 coding agent 是怎么回事。其余一切都放进你主动加回来的 extension 里。
 
 ### Personal Agents
