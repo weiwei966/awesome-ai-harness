@@ -305,6 +305,7 @@ Read the source. This is the fastest way to learn the craft.
 ### SDKs & runtimes
 
 - [LangGraph](https://github.com/langchain-ai/langgraph) — Graph-structured orchestration with explicit state.
+- [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) — Local-first runtime that makes session state, governed MCP tools, approvals, credential scoping, and audit/replay explicit; selectable backends keep execution deployment-aware.
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) — Handoffs, guardrails, and tracing as primitives.
 - [Pydantic AI](https://github.com/pydantic/pydantic-ai) — Type-safe agents; strong schema discipline.
 - [smolagents](https://github.com/huggingface/smolagents) — Hugging Face. The reference implementation of code-as-action in ~1,000 lines; agents emit Python instead of JSON tool calls, executed in pluggable sandboxes.
