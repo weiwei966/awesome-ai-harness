@@ -148,6 +148,7 @@ Context window 就是 agent 的全部工作记忆，而且是一种稀缺的、�
 - [Graphiti](https://github.com/getzep/graphiti) —— 用带时间感知的知识图谱做 agent 记忆：每条事实都带有效期区间，所以记忆能回答"什么时候什么是真的"。
 - [Are We Ready For An Agent-Native Memory System?](https://arxiv.org/abs/2606.24775) —— 论证外挂式的记忆存储满足不了 agent 真正的需要；一张不错的设计空间地图。
 - [Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes](https://arxiv.org/abs/2604.28138) —— 把 session resume 当系统问题来解：重放聊天历史只能救回一小部分崩溃的 session；真正的恢复需要 runtime 级别的 checkpoint。
+- [Pond v1 规范](https://github.com/tenequm/pond/blob/main/docs/spec.md) —— 定义一种跨 harness 的 session archive：adapter 将各源格式映射为完整保留原始值的 Session/Message/Part schema，并能为另一个受支持的客户端重建已存储的历史。
 
 ## 多 Agent 与编排
 
