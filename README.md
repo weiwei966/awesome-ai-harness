@@ -148,6 +148,7 @@ Tools are the agent's API to reality. Their names, schemas, return values, and e
 - [Graphiti](https://github.com/getzep/graphiti) — Temporally-aware knowledge graphs as agent memory: facts carry validity intervals, so the memory can answer "what was true when."
 - [Are We Ready For An Agent-Native Memory System?](https://arxiv.org/abs/2606.24775) — Argues bolted-on memory stores miss what agents actually need; a good map of the design space.
 - [Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes](https://arxiv.org/abs/2604.28138) — Session resume as a systems problem: replaying chat history recovers only a fraction of crashed sessions; real resume needs runtime-level checkpointing.
+- [Pond v1 specification](https://github.com/tenequm/pond/blob/main/docs/spec.md) — Defines a cross-harness session archive in which adapters map each source format into a value-complete Session/Message/Part schema and reconstruct the stored history for another supported client.
 
 ## Multi-Agent & Orchestration
 
