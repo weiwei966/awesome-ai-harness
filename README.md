@@ -254,6 +254,7 @@ The optimization target migrated: first prompts, then scaffolds, now the harness
 - [Self-Harness: Harnesses That Improve Themselves](https://arxiv.org/abs/2606.09498) — The direct application: the harness observes its own failures and patches its own scaffolding.
 - [Agentic Harness Engineering: Observability-Driven Automatic Evolution](https://arxiv.org/abs/2604.25850) — Closes the loop between the tracing stack and harness mutation: traces in, harness patches out.
 - [HARBOR: Automated Harness Optimization](https://arxiv.org/abs/2604.20938) — Benchmark-driven harness search. (Not to be confused with Harbor, the terminal-bench task format.)
+- [Reef](https://github.com/Human-Agent-Society/reef) — Human-Agent-Society. A runnable version of what the papers above describe: the harness is a versioned artifact behind a promotion gate, so you can see how candidate-vs-current evaluation, publish-on-win and rollback are actually wired into a live serving path.
 
 ## Reference Harnesses
 
