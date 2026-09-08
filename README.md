@@ -212,6 +212,8 @@ Loading every instruction upfront wastes context. Loading them on demand is a ha
 - [OpenHands Skills](https://docs.openhands.dev/overview/skills) — The same progressive-disclosure idea in a second major harness — evidence the pattern is a standard, not a vendor feature.
 - [Voyager](https://arxiv.org/abs/2305.16291) — The research ancestor: skill libraries that compose over time.
 
+- [Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report](https://arxiv.org/abs/2608.15763) — TaoLive AIGC LLM Team. Describes on-demand skill loading and hook-enforced validation in a versioned live-commerce harness.
+
 ## Evaluation & Observability
 
 You cannot tune a harness you cannot measure. Trajectory-level evaluation is a distinct problem from model benchmarking — and the benchmarks themselves are now under audit. This section holds the anchors; the full treatment lives in our sibling list, [awesome-agent-eval](https://github.com/Vendredi218/awesome-agent-eval).
