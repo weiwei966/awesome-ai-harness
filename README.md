@@ -160,14 +160,14 @@ Tools are the agent's API to reality. Their names, schemas, return values, and e
 
 If your harness can run commands, it can run *bad* commands. The 2025-26 convergence: both major labs independently arrived at the same two-plane design — filesystem isolation plus a domain-allowlist egress proxy.
 
-- [sandbox-runtime](https://github.com/anthropic-experimental/sandbox-runtime) — Anthropic. The open reference implementation of that two-plane design.
+- [sandbox-runtime](https://github.com/anthropics/sandbox-runtime) — Anthropic. The open reference implementation of that two-plane design.
 - [Making Claude Code more secure and autonomous through sandboxing](https://www.anthropic.com/engineering/claude-code-sandboxing) — Anthropic. The companion post: proper sandboxing cut permission prompts by 84% — isolation *buys* autonomy rather than restricting it.
 - [How we contain Claude](https://www.anthropic.com/engineering/how-we-contain-claude) — Anthropic. Containment across products, one level up from a single harness.
 - [Codex sandboxing](https://github.com/openai/codex/blob/main/docs/sandbox.md) — OpenAI. The other lab's answer: Seatbelt on macOS, Landlock on Linux — worth reading side by side with Anthropic's.
 - [A deep dive on agent sandboxes](https://pierce.dev/notes/a-deep-dive-on-agent-sandboxes) — Pierce Freeman. The taxonomy of isolation technologies (containers, gVisor, Firecracker, V8 isolates) from a harness builder's seat.
 - [Iterating with shadow workspaces](https://cursor.com/blog/shadow-workspace) — Cursor. Isolation for a different reason: a hidden copy of the workspace where the agent can break things while getting real LSP feedback.
 - [E2B](https://github.com/e2b-dev/E2B) — Sandboxed cloud runtimes for agent-generated code.
-- [microsandbox](https://github.com/microsandbox/microsandbox) — Self-hosted microVM isolation with sub-200ms boot; the middle ground between containers-too-weak and VMs-too-slow.
+- [microsandbox](https://github.com/superradcompany/microsandbox) — Self-hosted microVM isolation with sub-200ms boot; the middle ground between containers-too-weak and VMs-too-slow.
 - [Modal Sandboxes](https://modal.com/docs/guide/sandbox) — Sandboxing as a serverless primitive; notable for making per-run isolation cheap enough to be the default.
 - [Cua](https://github.com/trycua/cua) — Sandbox-per-run for computer-use agents: ephemeral macOS/Linux/Windows VMs that reset on every run, so agents are reproducible and the host stays untouched.
 - [Daytona](https://github.com/daytonaio/daytona) — Sandbox infrastructure purpose-built for agent workloads. Note: the open-source repo stopped receiving updates in mid-2026; evaluate accordingly.
@@ -182,7 +182,7 @@ If your harness can run commands, it can run *bad* commands. The 2025-26 converg
 - [Auditing Agent Harness Safety](https://arxiv.org/abs/2605.14271) — HarnessAudit: trajectory-level auditing of what harnesses actually let through, as opposed to what their docs claim.
 - [Magentic-UI: Towards Human-in-the-loop Agentic Systems](https://arxiv.org/abs/2507.22358) — Microsoft. Six concrete HITL mechanisms (co-planning, co-tasking, action guards…) as reusable design patterns, not ad-hoc confirm dialogs.
 - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/) — The checklist to review your harness against.
-- [mcp-scan](https://github.com/invariantlabs-ai/mcp-scan) — Invariant Labs. Scanner for tool poisoning and rug-pull attacks in MCP servers; their study found poisoned metadata in a meaningful share of public servers — scan before you mount.
+- [agent-scan](https://github.com/snyk/agent-scan) — Invariant Labs, now Snyk. Scanner for tool poisoning and rug-pull attacks in MCP servers; their study found poisoned metadata in a meaningful share of public servers — scan before you mount.
 - [HumanLayer](https://github.com/humanlayer/humanlayer) — Human-in-the-loop approval as infrastructure.
 - [Claude Code Security Review](https://github.com/anthropics/claude-code-security-review) — Agentic security review as a GitHub Action.
 
@@ -195,7 +195,7 @@ The clearest structural story of 2026: the harness is decomposing into standardi
 - [Model Context Protocol](https://modelcontextprotocol.io) — The standard for wiring tools and data into harnesses.
 - [Official MCP Registry](https://github.com/modelcontextprotocol/registry) — The namespace and discovery layer the ecosystem consolidated on.
 - [One Year of MCP](https://blog.modelcontextprotocol.io/posts/2025-11-25-first-mcp-anniversary/) — The anniversary/spec-release post: what the protocol learned in production during its first year.
-- [Agent Client Protocol](https://github.com/zed-industries/agent-client-protocol) — Zed. LSP for agents: a JSON-RPC protocol that lets any agent run inside any editor without point-to-point integrations.
+- [Agent Client Protocol](https://github.com/agentclientprotocol/agent-client-protocol) — Zed. LSP for agents: a JSON-RPC protocol that lets any agent run inside any editor without point-to-point integrations.
 - [agents.md](https://agents.md/) — The cross-vendor push to standardize per-repo agent instruction files.
 - [AGENT.md](https://ampcode.com/AGENT.md) — The convention that started it.
 - [ContextForge MCP Gateway](https://github.com/IBM/mcp-context-forge) — IBM. The enterprise pattern: federate many MCP servers behind one gateway with central auth and audit.
@@ -214,7 +214,7 @@ Loading every instruction upfront wastes context. Loading them on demand is a ha
 
 ## Evaluation & Observability
 
-You cannot tune a harness you cannot measure. Trajectory-level evaluation is a distinct problem from model benchmarking — and the benchmarks themselves are now under audit. This section holds the anchors; the full treatment lives in our sibling list, [awesome-agent-eval](https://github.com/Vendredi218/awesome-agent-eval).
+You cannot tune a harness you cannot measure. Trajectory-level evaluation is a distinct problem from model benchmarking — and the benchmarks themselves are now under audit. This section holds the anchors; the full treatment lives in our sibling list, [awesome-agent-eval](https://github.com/weiwei966/awesome-agent-eval).
 
 - [Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/) — Hamel Husain. The best practical writing on building an eval loop that survives contact with production.
 - [Creating a LLM-as-a-Judge That Drives Business Results](https://hamel.dev/blog/posts/llm-judge/) — Hamel Husain.
@@ -265,16 +265,16 @@ Read the source. This is the fastest way to learn the craft.
 - [Codex CLI](https://github.com/openai/codex) — OpenAI's, in Rust.
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) — Google's, Apache-2.0.
 - [Aider](https://github.com/Aider-AI/aider) — Mature, with unusually rigorous repo-map and edit-format engineering.
-- [OpenHands](https://github.com/All-Hands-AI/OpenHands) — Research-grade, fully open, strong sandboxing story.
+- [OpenHands](https://github.com/OpenHands/OpenHands) — Research-grade, fully open, strong sandboxing story.
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent) — The ACI paper as running code.
 - [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) — The same team's ~100-line counterpoint: bash as the only tool, no tool-calling API, yet >74% on SWE-bench Verified with a frontier model driving it. The sharpest datapoint in the minimalism debate.
 - [Cline](https://github.com/cline/cline) — VS Code agent with an explicit plan/act split.
 - [Kilo Code](https://github.com/Kilo-Org/kilocode) — The surviving branch of the Cline→Roo fork lineage (Roo Code was archived in 2026), with user-defined agent modes carrying scoped tool access.
-- [OpenCode](https://github.com/sst/opencode) — Terminal agent, provider-agnostic.
+- [OpenCode](https://github.com/anomalyco/opencode) — Terminal agent, provider-agnostic.
 - [Crush](https://github.com/charmbracelet/crush) — Charm. The LSP-as-context bet: feed the model language-server data the way an IDE feeds a human. Note the FSL-1.1-MIT license — source-available, converts to MIT after two years.
 - [Qwen Code](https://github.com/QwenLM/qwen-code) — Alibaba. A case study in porting a harness across model families: a gemini-cli fork whose prompts and function-calling parser were rewritten for Qwen3-Coder — instructive for seeing which layers of a CLI are model-specific.
 - [Trae Agent](https://github.com/bytedance/trae-agent) — ByteDance. Research-oriented coding agent with an ablation-friendly modular design.
-- [Goose](https://github.com/block/goose) — Block's extensible on-machine agent.
+- [Goose](https://github.com/aaif-goose/goose) — Block's extensible on-machine agent.
 - [Continue](https://github.com/continuedev/continue) — Building blocks for custom in-IDE assistants.
 - [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) — Everything is a plugin, including the agent loop itself. There is deliberately no privileged core; the shipped coding agent is just one composition of swappable parts.
 - [Pi](https://github.com/earendil-works/pi) — The minimalist counterpoint: a thin core of four tools (`read`, `write`, `edit`, `bash`) on the bet that frontier models already know what a coding agent is. Everything else lives in extensions you add deliberately.
@@ -345,7 +345,7 @@ The governance split that determines your strategy: **core-open** projects (Open
 - [Agent Harness concepts](https://learn.microsoft.com/en-us/agent-framework/concepts/harness) — Microsoft. A vendor shipping "harness" as a product concept, with a capability matrix (approval modes, checkpointing, isolation…) that doubles as a build checklist.
 - [Inside the Scaffold: A Source-Code Taxonomy of Coding Agent Architectures](https://arxiv.org/abs/2604.03515) — Reads the actual source of the major coding agents and maps the design space you're about to enter.
 - [What I learned building an opinionated and minimal coding agent](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/) — Mario Zechner. The Pi retrospective: every feature that didn't survive contact with reality, and why.
-- [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) — Runnable patterns.
+- [Claude Cookbooks](https://github.com/anthropics/claude-cookbooks) — Runnable patterns.
 - [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
 - [LiteLLM](https://github.com/BerriAI/litellm) — One interface across providers; useful for harness-level A/B tests.
 - [System Prompts and Models of AI Tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) — Collected system prompts from shipping products. Primary sources, unmatched for studying real harness design.
@@ -368,11 +368,11 @@ The governance split that determines your strategy: **core-open** projects (Open
 - [AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) — Microsoft. 十余节课, 有中文版; the gentlest on-ramp.
 - [Hello-Agents 《从零开始构建智能体》](https://github.com/datawhalechina/hello-agents) — Datawhale. 中文社区最系统的智能体课程 (70k+ ⭐) — build the harness from scratch, in Chinese.
 - [MCP: Build Rich-Context AI Apps with Anthropic](https://www.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic/) — DeepLearning.AI. Short course on the tool-protocol layer.
-- [Context-Engineering](https://github.com/davidkimai/Context-Engineering) — David Kim. A first-principles handbook treating the context window the way an OS course treats memory.
+- [Context-Engineering](https://github.com/jasontang-ai/Context-Engineering) — David Kim. A first-principles handbook treating the context window the way an OS course treats memory.
 
 ### Community & adjacent lists
 
-- [awesome-agent-eval](https://github.com/Vendredi218/awesome-agent-eval) — Our sibling list: the measuring half — agent benchmarks and their pathologies, verifier design, LLM-as-judge, production eval loops.
+- [awesome-agent-eval](https://github.com/weiwei966/awesome-agent-eval) — Our sibling list: the measuring half — agent benchmarks and their pathologies, verifier design, LLM-as-judge, production eval loops.
 - [AI Engineer](https://www.youtube.com/@aiDotEngineer) — The conference channel; the densest single archive of harness-engineering talks.
 - [Latent Space](https://www.latent.space/) — The podcast/newsletter of record for the agent-engineering beat.
 - [MCP community channels](https://modelcontextprotocol.io/community/communication) — Where the protocol actually gets decided (SEPs, working groups).
