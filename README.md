@@ -241,6 +241,7 @@ You cannot tune a harness you cannot measure. Trajectory-level evaluation is a d
 - [Langfuse](https://github.com/langfuse/langfuse) — Open-source LLM tracing and evals.
 - [Arize Phoenix](https://github.com/Arize-ai/phoenix) — Tracing and evaluation for agent traces.
 - [Braintrust](https://www.braintrust.dev/docs) — Evals-as-CI: the loop of log → dataset → experiment → regression gate.
+- [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) — Continuum AI. Records a harness at the HTTP boundary and serves the recording back, so you can change the scaffolding and re-run the same session with no model called; its nine adapter fixtures are a written record of how each harness resolves its origin, which is the part that bites when you instrument one.
 
 ## Self-Improving Harnesses & Harness Optimization
 
