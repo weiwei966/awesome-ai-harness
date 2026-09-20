@@ -146,6 +146,7 @@ Tools are the agent's API to reality. Their names, schemas, return values, and e
 - [Letta](https://github.com/letta-ai/letta) — The MemGPT ideas as a working stateful-agent server.
 - [Mem0](https://github.com/mem0ai/mem0) — Memory layer with extraction/consolidation pipelines; the [companion paper](https://arxiv.org/abs/2504.19413) reports strong latency and benchmark numbers (self-reported — treat vendor-run memory benchmarks with appropriate skepticism, here and everywhere).
 - [Graphiti](https://github.com/getzep/graphiti) — Temporally-aware knowledge graphs as agent memory: facts carry validity intervals, so the memory can answer "what was true when."
+- [Screenpipe MCP](https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp) — Screenpipe. A source-available example of exposing captured screen/audio history as agent memory through a local API, while keeping SQLite ownership in the recorder daemon rather than the MCP process.
 - [Are We Ready For An Agent-Native Memory System?](https://arxiv.org/abs/2606.24775) — Argues bolted-on memory stores miss what agents actually need; a good map of the design space.
 - [Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes](https://arxiv.org/abs/2604.28138) — Session resume as a systems problem: replaying chat history recovers only a fraction of crashed sessions; real resume needs runtime-level checkpointing.
 
