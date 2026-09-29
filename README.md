@@ -89,6 +89,7 @@ The field's vocabulary is still settling; these pin it down.
 
 - [From Question Answering to Task Completion: A Survey on Agent System and Harness Design](https://arxiv.org/abs/2606.20683) — The academic survey of harness design proper; enumerates the six runtime responsibilities (session state, context budgeting, tool dispatch, provider abstraction, permissions, recovery) every harness must answer.
 - [Agentic Design Patterns: A System-Theoretic Framework](https://arxiv.org/abs/2601.19752) — A pattern catalog that treats the harness as a system with feedback loops, not a prompt with plumbing.
+- [Harness-Zero: Harness Distillation via Agent-as-Harness](https://arxiv.org/abs/2609.24974) — Distills the behaviors of an optimized inference-time harness into model weights through an agent-as-harness training loop; deployment keeps the gains with no harness at inference time. ([code](https://github.com/metaevo-ai/harness-zero))
 
 ## Context Engineering
 
@@ -109,6 +110,7 @@ The context window is the agent's entire working memory, and it is a scarce, act
 - [Why Cline Doesn't Index Your Codebase](https://cline.bot/blog/why-cline-doesnt-index-your-codebase-and-why-thats-a-good-thing) — Cline. The case against RAG-for-code: agentic grep + read beats embeddings on freshness, security surface, and truthfulness.
 - [Building a better repository map with tree-sitter](https://aider.chat/2023/10/22/repomap.html) — Aider. The opposite bet from Cline's: a compact, always-present structural map of the repo, built from AST symbols and ranked by graph centrality.
 - [AI Agent 上下文工程：LangChain & Manus 研讨会全记录](https://liduos.com/posts/langchain-manus-agent-context-engineering-workshop) — 中文. LangChain × Manus workshop notes pairing the two teams' context strategies side by side.
+- [Meta Context Engineering via Agentic Skill Evolution](https://arxiv.org/abs/2601.21557) — A bi-level framework that co-evolves context-engineering skills and context artifacts, replacing static CE heuristics with agentic skill evolution. (ICML 2026, [code](https://github.com/metaevo-ai/meta-context-engineering))
 
 ## Tool Design & Agent-Computer Interfaces
 
