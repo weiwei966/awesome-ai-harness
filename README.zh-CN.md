@@ -89,6 +89,7 @@ flowchart TB
 
 - [From Question Answering to Task Completion: A Survey on Agent System and Harness Design](https://arxiv.org/abs/2606.20683) —— 真正针对 harness 设计本身的学术综述；列举了每个 harness 都绕不开的六项运行时职责（session 状态、context 预算、tool 分发、provider 抽象、权限、恢复）。
 - [Agentic Design Patterns: A System-Theoretic Framework](https://arxiv.org/abs/2601.19752) —— 一份把 harness 当成带反馈回路的系统、而不是"prompt 加管道"来看待的模式目录。
+- [The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents](https://ssrn.com/abstract=7186738) —— Lee & Park。以 agent loop 为分析单位的综述：控制策略、终止条件与步数预算、自我验证与外部检查、错误恢复与人工介入、skills 和 harness，并讨论如何区分 benchmark 分数中有多少来自 harness 而不是模型。
 
 ## Context Engineering
 
