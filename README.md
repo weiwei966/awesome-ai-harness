@@ -89,6 +89,7 @@ The field's vocabulary is still settling; these pin it down.
 
 - [From Question Answering to Task Completion: A Survey on Agent System and Harness Design](https://arxiv.org/abs/2606.20683) — The academic survey of harness design proper; enumerates the six runtime responsibilities (session state, context budgeting, tool dispatch, provider abstraction, permissions, recovery) every harness must answer.
 - [Agentic Design Patterns: A System-Theoretic Framework](https://arxiv.org/abs/2601.19752) — A pattern catalog that treats the harness as a system with feedback loops, not a prompt with plumbing.
+- [The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents](https://ssrn.com/abstract=7186738) — Lee & Park. Takes the loop as the unit of analysis: control strategies, termination and step budgets, self-verification versus external checks, error recovery and human gates, skills, and harnesses, plus how to tell how much of a benchmark score comes from the harness rather than the model.
 
 ## Context Engineering
 
