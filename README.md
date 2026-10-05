@@ -279,6 +279,8 @@ Read the source. This is the fastest way to learn the craft.
 - [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) — Everything is a plugin, including the agent loop itself. There is deliberately no privileged core; the shipped coding agent is just one composition of swappable parts.
 - [Pi](https://github.com/earendil-works/pi) — The minimalist counterpoint: a thin core of four tools (`read`, `write`, `edit`, `bash`) on the bet that frontier models already know what a coding agent is. Everything else lives in extensions you add deliberately.
 
+- [Cage](https://github.com/vitalik1921/cage) — Vitaliy Shebela. Uses TypeScript contracts, invariant-to-test links, and content hashes to send stale or incomplete work back to Claude Code or Codex.
+
 ### Personal agents
 
 - [OpenClaw](https://github.com/openclaw/openclaw) — The fastest-adopted harness in open-source history (380k+ stars within months of its late-2025 debut): local gateway control plane, messaging apps as the UI, memory as plain Markdown files, a heartbeat daemon for unprompted action.
