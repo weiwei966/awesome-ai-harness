@@ -278,6 +278,7 @@ Context window 就是 agent 的全部工作记忆，而且是一种稀缺的、�
 - [Continue](https://github.com/continuedev/continue) —— 自建 IDE 内助手的积木。
 - [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) —— 一切皆 plugin，连 agent loop 本身也是。刻意不保留任何特权内核；官方那个 coding agent 只是这些可替换零件的一种组合方式。
 - [Pi](https://github.com/earendil-works/pi) —— 极简主义的对照组：只有 `read`、`write`、`edit`、`bash` 四个工具的薄内核，赌的是前沿模型本来就知道 coding agent 是怎么回事。其余一切都放进你主动加回来的 extension 里。
+- [Orbi](https://github.com/orbi-build/orbi) —— 基于 Pi 的交付 harness，所有状态都放在 GitHub Issue 里（没有数据库、队列或常驻进程）：一个会话在隔离的 worktree 里写改动，另一个独立会话按 Issue 的验收项评审，只有评审过的那个 head 提交才会被合并和发版。
 
 ### Personal Agents
 

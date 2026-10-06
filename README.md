@@ -278,6 +278,7 @@ Read the source. This is the fastest way to learn the craft.
 - [Continue](https://github.com/continuedev/continue) — Building blocks for custom in-IDE assistants.
 - [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) — Everything is a plugin, including the agent loop itself. There is deliberately no privileged core; the shipped coding agent is just one composition of swappable parts.
 - [Pi](https://github.com/earendil-works/pi) — The minimalist counterpoint: a thin core of four tools (`read`, `write`, `edit`, `bash`) on the bet that frontier models already know what a coding agent is. Everything else lives in extensions you add deliberately.
+- [Orbi](https://github.com/orbi-build/orbi) — A delivery harness built on Pi that keeps all state in GitHub Issues (no database, queue, or daemon): one session writes the change in an isolated worktree, a separate session reviews it against the issue's acceptance criteria, and only the reviewed head commit is merged and released.
 
 ### Personal agents
 
