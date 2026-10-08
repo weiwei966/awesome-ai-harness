@@ -281,6 +281,7 @@ Read the source. This is the fastest way to learn the craft.
 
 ### Personal agents
 
+- [OpenAmer](https://github.com/openamer/openamer) — Open-source harness for Windows: background computer-use across the filesystem, terminal, GUI and a Chrome-DevTools-Protocol browser, persistent memory, skills that the agent writes for itself from experience, one 10-subsystem heartbeat instead of a scheduler zoo, and a local agent-to-agent mesh so instances can delegate to each other.
 - [OpenClaw](https://github.com/openclaw/openclaw) — The fastest-adopted harness in open-source history (380k+ stars within months of its late-2025 debut): local gateway control plane, messaging apps as the UI, memory as plain Markdown files, a heartbeat daemon for unprompted action.
 - [Hermes Agent](https://github.com/NousResearch/hermes-agent) — Nous Research. Harness-level self-improvement in practice: agent-curated memory, autonomous creation of reusable skills after complex tasks, full-text session search.
 
