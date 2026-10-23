@@ -271,7 +271,7 @@ Read the source. This is the fastest way to learn the craft.
 - [Cline](https://github.com/cline/cline) — VS Code agent with an explicit plan/act split.
 - [Kilo Code](https://github.com/Kilo-Org/kilocode) — The surviving branch of the Cline→Roo fork lineage (Roo Code was archived in 2026), with user-defined agent modes carrying scoped tool access.
 - [OpenCode](https://github.com/sst/opencode) — Terminal agent, provider-agnostic.
-- [Crush](https://github.com/charmbracelet/crush) — Charm. The LSP-as-context bet: feed the model language-server data the way an IDE feeds a human. Note the FSL-1.1-MIT license — source-available, converts to MIT after two years.
+- [wippaAGENT](https://github.com/wippa-studios/wippaAGENT) — A fleet config for the OpenCode harness that spells out the orchestrator-delegates-to-specialists wiring end to end: what the primary agent plans, which twelve specialists it hands work to, and how audit and review gates plus a bounded verify tool enforce every change before it counts as done.- [Crush](https://github.com/charmbracelet/crush) — Charm. The LSP-as-context bet: feed the model language-server data the way an IDE feeds a human. Note the FSL-1.1-MIT license — source-available, converts to MIT after two years.
 - [Qwen Code](https://github.com/QwenLM/qwen-code) — Alibaba. A case study in porting a harness across model families: a gemini-cli fork whose prompts and function-calling parser were rewritten for Qwen3-Coder — instructive for seeing which layers of a CLI are model-specific.
 - [Trae Agent](https://github.com/bytedance/trae-agent) — ByteDance. Research-oriented coding agent with an ablation-friendly modular design.
 - [Goose](https://github.com/block/goose) — Block's extensible on-machine agent.
