@@ -145,6 +145,7 @@ Tools are the agent's API to reality. Their names, schemas, return values, and e
 - [Generative Agents](https://arxiv.org/abs/2304.03442) — Memory stream with recency/importance/relevance retrieval.
 - [Letta](https://github.com/letta-ai/letta) — The MemGPT ideas as a working stateful-agent server.
 - [Mem0](https://github.com/mem0ai/mem0) — Memory layer with extraction/consolidation pipelines; the [companion paper](https://arxiv.org/abs/2504.19413) reports strong latency and benchmark numbers (self-reported — treat vendor-run memory benchmarks with appropriate skepticism, here and everywhere).
+- [Mnemoverse](https://github.com/mnemoverse/mcp-memory-server) — Puts memory quality inside the agent loop: rating a recalled memory as helpful or misleading re-ranks what comes back next. The MCP server and Python SDK are MIT; the memory engine behind them is hosted.
 - [Graphiti](https://github.com/getzep/graphiti) — Temporally-aware knowledge graphs as agent memory: facts carry validity intervals, so the memory can answer "what was true when."
 - [Are We Ready For An Agent-Native Memory System?](https://arxiv.org/abs/2606.24775) — Argues bolted-on memory stores miss what agents actually need; a good map of the design space.
 - [Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes](https://arxiv.org/abs/2604.28138) — Session resume as a systems problem: replaying chat history recovers only a fraction of crashed sessions; real resume needs runtime-level checkpointing.
