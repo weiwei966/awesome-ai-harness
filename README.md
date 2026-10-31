@@ -148,6 +148,8 @@ Tools are the agent's API to reality. Their names, schemas, return values, and e
 - [Graphiti](https://github.com/getzep/graphiti) — Temporally-aware knowledge graphs as agent memory: facts carry validity intervals, so the memory can answer "what was true when."
 - [Are We Ready For An Agent-Native Memory System?](https://arxiv.org/abs/2606.24775) — Argues bolted-on memory stores miss what agents actually need; a good map of the design space.
 - [Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes](https://arxiv.org/abs/2604.28138) — Session resume as a systems problem: replaying chat history recovers only a fraction of crashed sessions; real resume needs runtime-level checkpointing.
+- [Why source-linked memory needs correction history](https://github.com/OakcoderX/solopup-memory/blob/main/docs/outreach/engineering-note.md) — OakcoderX. Separates source-backed candidates, reviewed active memory, and revision history so a changed project decision need not become a timeless rule, using a native DSH plugin beta as the implementation case.
+
 
 ## Multi-Agent & Orchestration
 
