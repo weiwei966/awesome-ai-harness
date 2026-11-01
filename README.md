@@ -313,6 +313,8 @@ Read the source. This is the fastest way to learn the craft.
 - [AgentScope](https://github.com/agentscope-ai/agentscope) — Alibaba. Notable for real-time interruption and steering mid-loop as first-class primitives.
 - [Youtu-Agent](https://github.com/TencentCloudADP/youtu-agent) — Tencent. Async simple-agent harness tuned for strong benchmark results with open-weight models.
 
+- [Orkas](https://github.com/Orkas-AI/Orkas#how-it-works) — Orkas-AI. A desktop multi-agent runtime whose architecture notes explain named-agent dispatch versus handoff versus isolated workers, with links to context budgeting, session checkpoints and execution locks.
+
 ### Comparative reading
 
 - [DeepSeek Harness: Everything Is a Plugin](https://saikodev.ai/blog/deepseek-harness) — SaikoDev. A hands-on dsh walkthrough that turns into the sharpest architectural comparison available: dsh versus Pi as two opposite bets — structured addition against subtraction, and whether control over extending the system belongs to the developer ahead of time or to the agent at runtime.
