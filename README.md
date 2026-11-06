@@ -171,6 +171,7 @@ If your harness can run commands, it can run *bad* commands. The 2025-26 converg
 - [Modal Sandboxes](https://modal.com/docs/guide/sandbox) — Sandboxing as a serverless primitive; notable for making per-run isolation cheap enough to be the default.
 - [Cua](https://github.com/trycua/cua) — Sandbox-per-run for computer-use agents: ephemeral macOS/Linux/Windows VMs that reset on every run, so agents are reproducible and the host stays untouched.
 - [Daytona](https://github.com/daytonaio/daytona) — Sandbox infrastructure purpose-built for agent workloads. Note: the open-source repo stopped receiving updates in mid-2026; evaluate accordingly.
+- [Buddy Sandboxes](https://buddy.works/docs/sandboxes/introduction.md) — Sandbox VMs for coding agents, driven through a REST API, an MCP server or the bdy CLI; pipelines can be triggered on sandbox events.
 
 ## Safety, Permissions & Human-in-the-Loop
 
