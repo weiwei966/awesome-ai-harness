@@ -295,6 +295,7 @@ Read the source. This is the fastest way to learn the craft.
 
 - [GPT Researcher](https://github.com/assafelovic/gpt-researcher) — The longest-lived open deep-research harness: planner → parallel executors → publisher, with citation tracking throughout.
 - [Open Deep Research](https://github.com/langchain-ai/open_deep_research) — LangChain. Uniquely instructive because the repo preserves its own architectural evolution — three generations of deep-research design live side by side in one codebase.
+- [Agon](https://github.com/AutoResearch-Factory/Agon) — AutoResearch-Factory. Claude Code research harness built on Prompt Economy: 18 roles (230.6 KiB) run topic→idea→proposal→experiment loops with scientist/coder/auditor roles across 10+ fields.
 
 ### Voice
 
