@@ -148,6 +148,7 @@ Tools are the agent's API to reality. Their names, schemas, return values, and e
 - [Graphiti](https://github.com/getzep/graphiti) — Temporally-aware knowledge graphs as agent memory: facts carry validity intervals, so the memory can answer "what was true when."
 - [Are We Ready For An Agent-Native Memory System?](https://arxiv.org/abs/2606.24775) — Argues bolted-on memory stores miss what agents actually need; a good map of the design space.
 - [Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes](https://arxiv.org/abs/2604.28138) — Session resume as a systems problem: replaying chat history recovers only a fraction of crashed sessions; real resume needs runtime-level checkpointing.
+- [Loom: Memory Linked to Code](https://github.com/ClickHouse/loom/blob/v1.3.0/docs/use-cases/memory-linked-to-code.md) — ClickHouse. Shows how to attach shared lessons to indexed symbols and expose code-change states at retrieval time, so a harness can recheck a lesson against the current code.
 
 ## Multi-Agent & Orchestration
 
