@@ -171,6 +171,7 @@ If your harness can run commands, it can run *bad* commands. The 2025-26 converg
 - [Modal Sandboxes](https://modal.com/docs/guide/sandbox) — Sandboxing as a serverless primitive; notable for making per-run isolation cheap enough to be the default.
 - [Cua](https://github.com/trycua/cua) — Sandbox-per-run for computer-use agents: ephemeral macOS/Linux/Windows VMs that reset on every run, so agents are reproducible and the host stays untouched.
 - [Daytona](https://github.com/daytonaio/daytona) — Sandbox infrastructure purpose-built for agent workloads. Note: the open-source repo stopped receiving updates in mid-2026; evaluate accordingly.
+- [Sandscale](https://sandscale.dev/docs) — Sandscale. A hosted Firecracker microVM per agent run with the permission plane exposed to the harness: allow/ask/deny rules per tool, human approvals and an audit log, reachable over a remote MCP server.
 
 ## Safety, Permissions & Human-in-the-Loop
 
